@@ -7,15 +7,15 @@ class Image(db.Model):
     imageUrl = db.Column(db.String, nullable = False)
     imageRegion = db.Column(db.Integer, nullable = False) 
 
-    def to_dict(self):
-        image_dict = {
-            "id": self.id,
-            "imageName": self.imageName,
-            "imageUrl": self.imageUrl,
-            "imageRegion": self.imageRegion
-        }
+    # def to_dict(self):
+    #     image_dict = {
+    #         "id": self.id,
+    #         "imageName": self.imageName,
+    #         "imageUrl": self.imageUrl,
+    #         "imageRegion": self.imageRegion
+    #     }
 
-        return image_dict
+    #     return image_dict
 
     # @classmethod
     # def create_image(cls, image_data):

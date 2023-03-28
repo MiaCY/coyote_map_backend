@@ -1,11 +1,6 @@
-from flask import Blueprint, jsonify, abort, make_response, request
-# import os
-# import pathlib
+from flask import Blueprint, jsonify, request
 from google.cloud import storage
-# from app import db
-# from app.model.image import Image
 from app.model.image import Image
-# import psycopg2
 from app import db
 
 
